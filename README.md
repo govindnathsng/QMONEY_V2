@@ -106,9 +106,4 @@ For questions or feedback, feel free to reach out:
 
 Check out my <a href="https://www.crio.do/learn/portfolio/govindnathsng/" target="_blank">Crio Portfolio</a> for more projects like this!
 
-yaml
 
-
----
-
-This README highlights key features, technologies, and setup instructions, with a link to your Crio portfolio. Let me know if there’s anything else you’d like to add!
