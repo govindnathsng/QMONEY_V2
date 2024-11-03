@@ -1,63 +1,59 @@
-
-
-# QEats
+# QMoney
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![Gradle](https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white)
+![Crio](https://img.shields.io/badge/Crio-Learn%20by%20Doing-FFDD00?style=for-the-badge&logo=crio)
 
-> **Date:** July 2023
+> **Date:** May 2023
 
 ## 📘 Overview
-**QEats** is a popular food ordering app enabling users to browse and order dishes from nearby restaurants. This project involves implementing various backend features, resolving production issues, optimizing app performance, and adding advanced search capabilities.
+**QMoney** is a visual stock portfolio analyzer designed to assist portfolio managers in making informed trade recommendations for their clients. This project involves building core functionality for managing stock portfolios, fetching real-time stock data, and calculating returns, with a focus on application stability, availability, and performance.
 
 During this project:
-- Built core backend functionalities of QEats, a Spring Boot application.
-- Developed several REST API endpoints for restaurant information and food ordering.
-- Investigated and resolved production issues using Scientific Debugging methods.
-- Enhanced app performance under high load and implemented an advanced search feature.
+- Implemented essential portfolio management logic and published it as a Java library (JAR).
+- Refactored the application to support multiple stock quote services.
+- Enhanced the application’s performance and resilience.
 
 ## 🛠️ Project Structure
 
-### **Retrieve Restaurant Data**
+### **Fetch Stock Quotes and Compute Annualized Returns**
 #### Scope of Work
-- Implemented the `GET /API/v1/restaurants` endpoint along with request handler and response methods.
-- Leveraged **Mockito** for developing MVCS layers independently.
-- Retrieved a list of restaurants based on user location from **MongoDB**.
+- Integrated **Tiingo’s REST API** to retrieve live stock data.
+- Developed logic to calculate annualized returns based on stock purchase date and holding period.
 
 #### Skills Used
-- **Spring Boot**, **Spring Data**, **REST API**, **Jackson**, **Mockito**, **JUnit**, **MongoDB**
+- **Java**, **REST API**, **Jackson**
 
 ---
 
-### **Resolve Production Issues Using Scientific Debugging**
+### **Refactor and Publish as JAR**
 #### Scope of Work
-- Used structured debugging techniques and log messages to identify and fix QEats app crashes.
-- Applied **breakpoints** and **assert statements** to trace and resolve root causes.
+- Refactored code to align with an updated interface contract provided by the backend team.
+- Packaged the core functionality as a **JAR file** for simplified versioning and distribution.
+- Created usage examples to document the library’s features.
 
 #### Skills Used
-- **Scientific Debugging**
+- **Interfaces**, **Code Refactoring**, **Gradle**
 
 ---
 
-### **Replicate and Solve Performance Issues Using Caching Strategies**
+### **Improve Application Availability and Stability**
 #### Scope of Work
-- Conducted load testing with **JMeter** to identify performance bottlenecks.
-- Analyzed DB queries impacting performance and utilized **Redis caching** to improve read speeds.
+- Added a backup stock quote service using **Alpha Vantage** to ensure service availability.
+- Enhanced stability through detailed error reporting and robust exception handling.
 
 #### Skills Used
-- **Redis**, **JMeter**
+- **Interfaces**, **Exception Handling**
 
 ---
 
-### **Perform Search Operations with Custom Attributes**
+### **Enhance Application Performance**
 #### Scope of Work
-- Enabled user search for restaurants by attributes like name, cuisine, dish, and price using **MongoDB queries**.
-- Enhanced concurrent search capabilities using **multithreading**.
+- Introduced **multithreading** to improve responsiveness and handle larger datasets more efficiently.
+- Developed unit tests to assess and validate performance gains.
 
 #### Skills Used
-- **MongoDB querying**, **Multithreading**
+- **Multithreading**, **Unit Testing**
 
 ---
 
@@ -65,8 +61,8 @@ During this project:
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/govindnathsng/QEats.git
-   cd QEats
+   git clone https://github.com/govindnathsng/QMoney.git
+   cd QMoney
 
     Build the Project
 
@@ -82,21 +78,22 @@ bash
 
 ⚙️ Technologies & Tools
 
-    Backend: Java, Spring Boot, MongoDB, Redis
-    Testing: JUnit, Mockito, JMeter
-    Debugging: Scientific Debugging, IDE Breakpoints, Log Analysis
-    Concurrency: Multithreading for optimized search performance
+    Backend: Java, REST APIs, Multithreading, Jackson
+    Build Tool: Gradle
+    Testing: JUnit
+    Dependencies: Tiingo API, Alpha Vantage (Backup API)
 
 📈 Features
 
-    Restaurant Retrieval: Fetch restaurants based on user location.
-    Search Functionality: Search by name, cuisine, dish, and price.
-    Error Handling: Debug and resolve production issues.
-    Performance Optimization: Redis caching for faster data retrieval.
+    Real-Time Stock Quotes: Fetch current stock prices from Tiingo and Alpha Vantage.
+    Annualized Return Calculation: Analyze stock performance over time.
+    Modular JAR Packaging: Library available as a JAR for integration into other applications.
+    Enhanced Stability: Backup services and robust error handling for improved availability.
+    Performance Optimizations: Multithreaded processing for increased efficiency.
 
 🤝 Contributing
 
-Contributions are welcome! Fork the repository and submit a pull request to add new features or enhance the existing code.
+We welcome contributions! Fork the repository and submit a pull request to add new features or improve the existing code.
 📄 License
 
 This project is licensed under the Apache License 2.0.
@@ -114,4 +111,4 @@ yaml
 
 ---
 
-This README is structured to showcase each key feature and the technical skills involved in QEats. Let me know if there’s anything specific you’d like to add!
+This README highlights key features, technologies, and setup instructions, with a link to your Crio portfolio. Let me know if there’s anything else you’d like to add!
